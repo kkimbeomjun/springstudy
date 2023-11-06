@@ -2,10 +2,15 @@ package beomjun.preject1.service;
 
 import beomjun.preject1.domain.Member;
 import beomjun.preject1.repositorty.MemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+
+// 순수 자바 이기 때문에 연결을 해줄수 가없다
+//@Service // 스프링에 연결 해주기 위해 사용한다
 public class MemberService {
 
     private final MemberRepository memberRepository;
